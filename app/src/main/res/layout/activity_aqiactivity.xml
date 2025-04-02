@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#EDFFE3">
+
+    <!-- AQI Icon -->
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/image2"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="AQI Icon" />
+
+    <!-- AQI Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AQI"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="8dp" />
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/search_place"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/search_background"
+        android:hint="Search for the place"
+        android:paddingStart="12dp"
+        android:drawableStart="@drawable/ic_search"
+        android:textSize="16sp" />
+
+    <!-- Confirmed Place Button -->
+    <Button
+        android:id="@+id/btn_confirm_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmed Place"
+        android:backgroundTint="#0B8043"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Show Button -->
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHOW"
+        android:backgroundTint="#0B8043"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp" />
+
+    <!-- Pollution Scale -->
+    <include layout="@layout/deforestation_scale"/>
+
+</LinearLayout>

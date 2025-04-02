@@ -4,8 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/main"
     android:layout_height="match_parent"
-    android:background="#F8F9FA"
+    android:background="#EDFFE3"
     tools:context=".SettingsActivity">
 
     <!-- Header with title -->
@@ -46,22 +47,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Stepper -->
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                app:cardBackgroundColor="@android:color/white"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="2dp">
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/stepperView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="12dp" />
-            </com.google.android.material.card.MaterialCardView>
-
             <!-- Connection Settings Section -->
             <TextView
                 android:layout_width="wrap_content"
@@ -86,7 +71,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="16dp"
+                    android:padding="7dp"
+                    android:layout_marginLeft="10dp"
                     android:gravity="center_vertical">
 
                     <ImageView
@@ -101,7 +87,6 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="IP Address"
-                        android:text="192.168.201.3"
                         android:textSize="16sp"
                         android:background="@null"
                         android:padding="12dp" />
@@ -121,7 +106,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="16dp"
+                    android:padding="7dp"
+                    android:layout_marginLeft="10dp"
                     android:gravity="center_vertical">
 
                     <ImageView
@@ -136,24 +122,13 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="Port"
-                        android:text="22"
                         android:textSize="16sp"
                         android:background="@null"
                         android:padding="12dp" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Authentication Section -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="12dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="AUTHENTICATION"
-                android:textColor="#5F6368"
-                android:textSize="14sp"
-                android:letterSpacing="0.1" />
+
 
             <!-- Username Field -->
             <com.google.android.material.card.MaterialCardView
@@ -168,7 +143,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="16dp"
+                    android:padding="7dp"
+                    android:layout_marginLeft="10dp"
                     android:gravity="center_vertical">
 
                     <ImageView
@@ -183,7 +159,6 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="Username"
-                        android:text="lg"
                         android:textSize="16sp"
                         android:background="@null"
                         android:padding="12dp" />
@@ -203,7 +178,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="16dp"
+                    android:padding="7dp"
+                    android:layout_marginLeft="10dp"
                     android:gravity="center_vertical">
 
                     <ImageView
@@ -271,7 +247,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="16dp">
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -298,6 +275,8 @@
                         android:text="Test Connection"
                         android:textColor="@android:color/white"
                         app:cornerRadius="20dp"
+                        android:padding="10dp"
+                        android:textSize="10dp"
                         android:backgroundTint="#0B8043"
                         style="@style/Widget.MaterialComponents.Button.TextButton" />
                 </LinearLayout>
@@ -310,8 +289,8 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-        app:elevation="8dp"
+        android:background="#EDFFE3"
+        app:elevation="12dp"
         app:itemIconTint="@drawable/bottom_nav_selector"
         app:itemTextColor="@drawable/bottom_nav_selector"
         app:labelVisibilityMode="labeled"

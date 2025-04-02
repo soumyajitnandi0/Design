@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Row 1: Very Polluted -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#FF0000" /> <!-- Red -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Very Polluted"
+            android:textSize="16sp"
+            android:paddingStart="10dp" />
+    </LinearLayout>
+
+    <!-- Row 2: Moderate Polluted -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#FFA500" /> <!-- Orange -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moderate Polluted"
+            android:textSize="16sp"
+            android:paddingStart="10dp" />
+    </LinearLayout>
+
+    <!-- Row 3: Less Polluted -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#FFD700" /> <!-- Yellow -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Less Polluted"
+            android:textSize="16sp"
+            android:paddingStart="10dp" />
+    </LinearLayout>
+
+    <!-- Row 4: Healthy Environment -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#ADFF2F" /> <!-- Green -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Healthy Environment"
+            android:textSize="16sp"
+            android:paddingStart="10dp" />
+    </LinearLayout>
+
+</LinearLayout>
