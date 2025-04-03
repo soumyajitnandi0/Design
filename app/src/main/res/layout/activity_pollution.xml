@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EDFFE3"
+    android:background="#EBF5FF"
     android:fitsSystemWindows="true"
     tools:context=".PollutionActivity">
 
@@ -112,7 +112,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:backgroundTint="#0B8043"
+                        android:backgroundTint="#0F56B3"
                         android:paddingVertical="12dp"
                         android:text="Confirm Location"
                         android:textColor="#FFFFFF"

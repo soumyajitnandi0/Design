@@ -21,7 +21,7 @@
             android:exported="false" />
         <activity
             android:name=".AQIActivity"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".PollutionActivity"
             android:exported="false" />
